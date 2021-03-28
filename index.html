@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form FCC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/acb7dd7b7d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="logo"><img id="header-img" src="https://avatars1.githubusercontent.com/u/34481389?s=400&u=9e8ec1d87678ec80317e63db14486fad6d6c05c5&v=4" alt="Digituar Logo"></div>
+        <nav id="nav-bar" class="navbar">
+            <div class="icon-bar" onclick="Show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            <ul id="nav-lists">
+                <li class="close"><span onclick="Hide()">×</span></li>
+                <li><a class="nav-link" href="#form">Newsletter</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#how-it-works">Info Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input name="email" type="email" placeholder="Your email address" id="email" required>
+        <input type="submit" id="submit" value="Subscribe">
+    </form>
+
+    <div class="pricing" id="pricing">
+        <div class="plan">
+            <div class="plan-header">
+                <h3>Pro</h3>
+                <div class="plan-price"><span class="pricing-unit">$</span>69</div>
+            </div>
+
+            <div class="plan-action">
+                <a href="#">Get it</a>
+            </div>
+
+            <div class="plan-features">
+                <ul>
+                    <li>First Feature</li>
+                    <li>Second Feature</li>
+                    <li>Third Feature</li>
+                    <li>Single use license</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="plan">
+            <div class="plan-header">
+                <h3>Premium</h3>
+                <div class="plan-price"><span class="pricing-unit">$</span>89</div>
+            </div>
+
+            <div class="plan-action">
+                <a href="#">Get it</a>
+            </div>
+
+            <div class="plan-features">
+                <ul>
+                    <li>First Feature</li>
+                    <li>Second Feature</li>
+                    <li>Third Feature</li>
+                    <li>Single use license</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section id="whydigituar">
+        <h2 class="heading">WHY DIGITUAR</h2>
+        <p class="about-text">Previously, many files had to be used on the stage. Aside from carrying so many files, it was not easy at all to find a desire we were looking for. Since we experienced these problems on the stage ourselves, we analyzed all the necessary conditions
+            for a suitable, practical software for the scene! From time to time, every musician, repertoire on stage, concert, folk bar, wedding, etc. And it had gone through. For these reasons, the Repertoire Program has been formed. The repertoire program
+            was designed according to the most professional musician from the most amateur musician, and was developed as a software that can be used easily in concert, on stage, wherever the repertoire is required. At the same time, the most necessary
+            practical applications have been implemented by using different musicians on stage.</p>
+    </section>
+
+    <div class="features" id="features">
+        <div class="columns">
+            <div class="round-icon">
+                <span class="fa fa-book fa-fw"></span>
+            </div>
+            <h3>Genres</h3>
+            <hr>
+            <div class="desc">
+                <p>You can save all the works under a certain category and then search under that category.</p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="round-icon">
+                <span class="fas fa-file-export"></span>
+            </div>
+            <h3>Import/export</h3>
+            <hr>
+            <div class="desc">
+                <p>All of the works can be exported individually or can be imported again on another computer.</p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="round-icon">
+                <span class="fas fa-globe"></span>
+            </div>
+            <h3>3 different languages</h3>
+            <hr>
+            <div class="desc">
+                <p>It supports 3 different languages ​​(English, German, Turkish). You can also set the languages ​​yourself and change the texts.</p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="round-icon">
+                <span class="far fa-file-audio"></span>
+            </div>
+            <h3>Multimedia</h3>
+            <hr>
+            <div class="desc">
+                <p>You can add not only the words of the work, but also the note (BMP, GIF, TIF, JPG, PDF) and Media file (Mp3, Wave, MIDI).</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Video -->
+    <div id="how-it-works">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/V97b9YC5BTg" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <footer id="footer">
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <span>Copyright 2020, DIGITUAR</span>
+    </footer>
+</body>
+
+</html>
